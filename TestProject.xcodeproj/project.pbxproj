@@ -13,7 +13,53 @@
 		374A2A8A221FA9F500C541B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 374A2A89221FA9F500C541B5 /* Assets.xcassets */; };
 		374A2A8D221FA9F500C541B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 374A2A8B221FA9F500C541B5 /* LaunchScreen.storyboard */; };
 		374A2A90221FA9F500C541B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 374A2A8F221FA9F500C541B5 /* main.m */; };
+		374A2AA7221FAA3F00C541B5 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374A2AA1221FAA3000C541B5 /* CocoaLumberjack.framework */; };
+		374A2AA9221FAA5000C541B5 /* CocoaLumberjack.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 374A2AA1221FAA3000C541B5 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		374A2A9E221FAA3000C541B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 374A2A98221FAA3000C541B5 /* Lumberjack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 18F3BFD71A81E06E00692297;
+			remoteInfo = "CocoaLumberjack-Static";
+		};
+		374A2AA0221FAA3000C541B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 374A2A98221FAA3000C541B5 /* Lumberjack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 19FF46021B8B4CF400B43179;
+			remoteInfo = CocoaLumberjack;
+		};
+		374A2AA2221FAA3000C541B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 374A2A98221FAA3000C541B5 /* Lumberjack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 19FF460F1B8B4D1400B43179;
+			remoteInfo = CocoaLumberjackSwift;
+		};
+		374A2AA4221FAA3900C541B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 374A2A98221FAA3000C541B5 /* Lumberjack.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 19FF46011B8B4CF400B43179;
+			remoteInfo = CocoaLumberjack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		374A2AA8221FAA4800C541B5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				374A2AA9221FAA5000C541B5 /* CocoaLumberjack.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		374A2A7D221FA9F400C541B5 /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +72,7 @@
 		374A2A8C221FA9F500C541B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		374A2A8E221FA9F500C541B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		374A2A8F221FA9F500C541B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		374A2A98221FAA3000C541B5 /* Lumberjack.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lumberjack.xcodeproj; path = CocoaLumberjack/Lumberjack.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				374A2AA7221FAA3F00C541B5 /* CocoaLumberjack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +90,10 @@
 		374A2A74221FA9F400C541B5 = {
 			isa = PBXGroup;
 			children = (
+				374A2A98221FAA3000C541B5 /* Lumberjack.xcodeproj */,
 				374A2A7F221FA9F400C541B5 /* TestProject */,
 				374A2A7E221FA9F400C541B5 /* Products */,
+				374A2AA6221FAA3F00C541B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +121,23 @@
 			path = TestProject;
 			sourceTree = "<group>";
 		};
+		374A2A99221FAA3000C541B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				374A2A9F221FAA3000C541B5 /* libCocoaLumberjack.a */,
+				374A2AA1221FAA3000C541B5 /* CocoaLumberjack.framework */,
+				374A2AA3221FAA3000C541B5 /* CocoaLumberjackSwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		374A2AA6221FAA3F00C541B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,10 +148,12 @@
 				374A2A79221FA9F400C541B5 /* Sources */,
 				374A2A7A221FA9F400C541B5 /* Frameworks */,
 				374A2A7B221FA9F400C541B5 /* Resources */,
+				374A2AA8221FAA4800C541B5 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				374A2AA5221FAA3900C541B5 /* PBXTargetDependency */,
 			);
 			name = TestProject;
 			productName = TestProject;
@@ -115,12 +184,42 @@
 			mainGroup = 374A2A74221FA9F400C541B5;
 			productRefGroup = 374A2A7E221FA9F400C541B5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 374A2A99221FAA3000C541B5 /* Products */;
+					ProjectRef = 374A2A98221FAA3000C541B5 /* Lumberjack.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				374A2A7C221FA9F400C541B5 /* TestProject */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		374A2A9F221FAA3000C541B5 /* libCocoaLumberjack.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCocoaLumberjack.a;
+			remoteRef = 374A2A9E221FAA3000C541B5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		374A2AA1221FAA3000C541B5 /* CocoaLumberjack.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaLumberjack.framework;
+			remoteRef = 374A2AA0221FAA3000C541B5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		374A2AA3221FAA3000C541B5 /* CocoaLumberjackSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaLumberjackSwift.framework;
+			remoteRef = 374A2AA2221FAA3000C541B5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		374A2A7B221FA9F400C541B5 /* Resources */ = {
@@ -147,6 +246,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		374A2AA5221FAA3900C541B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaLumberjack;
+			targetProxy = 374A2AA4221FAA3900C541B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		374A2A86221FA9F400C541B5 /* Main.storyboard */ = {
@@ -285,6 +392,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 942M573LAW;
 				INFOPLIST_FILE = TestProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +409,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 942M573LAW;
 				INFOPLIST_FILE = TestProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
